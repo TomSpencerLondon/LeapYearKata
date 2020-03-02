@@ -30,4 +30,14 @@ public class LeapYearShould {
     void return_true_if_year_is_412() {
        assertTrue(LeapYear.check(412));
     }
+
+    @Test
+    void return_true_if_year_is_400() {
+        assertTrue(LeapYear.check(400));
+    }
+
+    @Test
+    void returns_false_if_year_is_500() {
+        assertFalse(LeapYear.check(500));
+    }
 }
